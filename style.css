@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-y: hidden;
+}
+
+div.time {
+    width: 240px;
+    /* aspect-ratio: 11; */
+    background: #091921;
+    box-shadow: 0 -10px 10px 10px rgba(255, 255, 255, 0.05), inset 0 -15px 15px rgba(255, 255, 255, 0.05), 0 15px 15px 15px rgba(0, 0, 0, 0.3), inset 0 15px 10px 15px rgba(0, 0, 0, 0.3);
+    height: 180px;
+    margin: 18px 20px;
+    border-radius: 3px;
+    font-size: 100px;
+    font-family: "Exo 2";
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(42, 111, 248);
+    font-weight: bold;
+}
+
+.countWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #dadae9;
+    width: max-content;
+    margin: auto;
+    border-radius: 5px;
+}
+
+button.resetBtn {
+    margin: auto;
+    /* text-align: center; */
+    padding: 10px 30px;
+    font-size: 25px;
+    background: #ffffff3d;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    margin-top: 50px;
+    font-family: "Exo 2";
+    font-weight: normal;
+    cursor: pointer;
+}
+
+section.countShow {
+    text-align: center;
+    margin-top: 100px;
+}
+
+body {
+    min-height: 100vh;
+    background: #091921;
+}
+
+header {
+    text-align: center;
+    margin-top: 110px;
+    font-size: 40px;
+    font-family: "Exo 2";
+    font-weight: bold;
+    font-weight: 600;
+    color: rgb(42, 111, 248);
+    letter-spacing: 0.01em;
+}
+
+.blockCont div {
+    height: 15px;
+    width: 15px;
+    background: rgb(42, 111, 248);
+    border-radius: 2px;
+}
+
+.blockCont {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100px;
+}
+
+section.timesSetting {
+    margin-top: 120px;
+    height: 45vh;
+    position: fixed;
+    background: #091921;
+    box-shadow: 0 -10px 10px 10px rgba(255, 255, 255, 0.05), inset 0 -15px 15px rgba(255, 255, 255, 0.05), 0 15px 15px 15px rgba(0, 0, 0, 0.3), inset 0 15px 10px 15px rgba(0, 0, 0, 0.3);
+    top: 50%;
+    right: 50%;
+    transform: translateX(50%) translateY(-76%);
+    width: 70vw;
+    border-radius: 3px;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: "Exo 2";
+    font-size: 16px;
+    letter-spacing: 0.1em;
+}
+
+form#timeForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100%;
+    margin: 30px;
+}
+
+form#timeForm label {
+    font-size: 25px;
+    font-family: "Exo 2";
+    font-weight: normal;
+    color: white;
+    margin: 10px 0px;
+}
+
+form#timeForm input {
+    font-size: 20px;
+    text-indent: 7px;
+    font-family: "Exo 2";
+    font-weight: bold;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+
+form#timeForm input:last-child {
+    width: 120px;
+    margin: 20px auto;
+    text-align: center;
+    background: #ffffff3d;
+    font-family: "Exo 2";
+    font-weight: normal;
+    color: white;
+    margin-bottom: 80px;
+    margin-top: 40px;
+}
+
+img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.image-container {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+}
