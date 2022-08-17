@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h3>Inter Shaheen Quiz Competition</h3>
+    </header>
+    <section class="timesSetting">
+        <form id="timeForm">
+            <label for="min">Minuite:</label>
+            <input type="number" name="min" id="min" placeholder="00" value="0">
+            <label for="Seconds">Seconds:</label>
+            <input type="number" name="sec" id="sec" placeholder="00">
+            <input type="submit" value="Start">
+        </form>
+    </section>
+    <section class="countShow">
+        <div class="countWrapper">
+            <div id="minDiv" class="time"></div>
+            <div class="blockCont">
+                <div></div>
+                <div></div>
+            </div>
+            <div id="secDiv" class="time"></div>
+        </div>
+
+        <button class="resetBtn" onclick="reset()">Reset</button>
+    </section>
+    
+
+    <script src="./main.js"></script>
+</body>
+</html>
