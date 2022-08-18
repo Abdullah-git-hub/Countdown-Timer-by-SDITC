@@ -77,6 +77,11 @@ function settings() {
     timesSettingSec.style.display = "block";
     timerDiv.classList.add("clockDiv");
     startBtn.removeAttribute("disabled");
+    clearInterval(timer);
+    displayCount(minSet, secSet);
+    audio.pause();
+    alarm.pause();
+    buzz.play();
 }
 
 function reset() {
