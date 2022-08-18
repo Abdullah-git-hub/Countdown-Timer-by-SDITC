@@ -36,8 +36,8 @@ div.time {
     border-radius: 5px;
 }
 
-button.resetBtn {
-    margin: auto;
+button.resetBtn, button.startBtn {
+    margin: auto 80px;
     /* text-align: center; */
     padding: 10px 30px;
     font-size: 25px;
@@ -50,6 +50,7 @@ button.resetBtn {
     font-family: "Exo 2";
     font-weight: normal;
     cursor: pointer;
+    width: 150px;
 }
 
 section.countShow {
