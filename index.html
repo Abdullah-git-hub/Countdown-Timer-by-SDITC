@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Countdown Timer</title>
     <link rel="stylesheet" href="./style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Exo 2" rel="stylesheet" />
+    <!-- <link href="https://fonts.googleapis.com/css?family=Exo 2" rel="stylesheet" /> -->
 </head>
 
 <body>
@@ -23,11 +23,11 @@
             <input type="number" name="min" id="min" placeholder="00" value="0" />
             <label for="Seconds">Seconds:</label>
             <input type="number" name="sec" id="sec" placeholder="00" value="0" />
-            <input type="submit" value="Set" />
+            <input type="submit" onclick="changeStyle()" value="Set Timer" />
         </form>
     </section>
     <section class="countShow">
-        <div class="countWrapper">
+        <div class="countWrapper clockDiv" id="select">
             <div id="minDiv" class="time"></div>
             <div class="blockCont">
                 <div></div>
@@ -36,8 +36,9 @@
             <div id="secDiv" class="time"></div>
         </div>
 
-        <button class="resetBtn" onclick="reset()">Settings</button>
         <button class="startBtn">Start</button>
+        <button class="resetBtn" onclick="reset()">Reset</button>
+        <button class="settingstBtn" onclick="settings()">Settings</button>
     </section>
     <footer>
         <div class="copyright">
