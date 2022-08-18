@@ -28,6 +28,7 @@ form.onsubmit = function(e) {
 };
 
 startBtn.onclick = function() {
+    startBtn.setAttribute("disabled", true)
     let minTime = minSet,
         secTime = secSet;
     var date = new Date().getTime(),
@@ -57,6 +58,7 @@ startBtn.onclick = function() {
         //     minTimeP++;
         // }
         if (minTimeP < 0 && secTimeP <= 0) {
+            startBtn.removeAttribute("disabled");
             console.log("ll");
             audio.pause();
             alarm.play();
@@ -74,9 +76,11 @@ startBtn.onclick = function() {
 function settings() {
     timesSettingSec.style.display = "block";
     timerDiv.classList.add("clockDiv");
+    startBtn.removeAttribute("disabled");
 }
 
 function reset() {
+    startBtn.removeAttribute("disabled");
     document.clear();
     clearInterval(timer);
     displayCount(minSet, secSet);
