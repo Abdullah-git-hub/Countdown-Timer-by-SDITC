@@ -14,7 +14,7 @@ html {
 }
 
 div.time {
-    width: 320px;
+    width: 340px;
     /* aspect-ratio: 11; */
     background: #091921;
     box-shadow: 0 -10px 10px 10px rgba(255, 255, 255, 0.05), inset 0 -15px 15px rgba(255, 255, 255, 0.05), 0 15px 15px 15px rgba(0, 0, 0, 0.3), inset 0 15px 10px 15px rgba(0, 0, 0, 0.3);
@@ -29,6 +29,9 @@ div.time {
     align-items: center;
     color: rgb(233, 233, 233);
     font-weight: bold;
+    position: relative;
+    display: flex;
+    justify-content: end;
 }
 
 .countWrapper {
@@ -174,4 +177,12 @@ img {
 
 .clockDiv {
     display: none;
+}
+div.time small {
+    font-size: 50px;
+    /* position: absolute; */
+    /* right: 20px; */
+    margin-left: 16px;
+    margin-right: 22px;
+    margin-top: 65px;
 }
